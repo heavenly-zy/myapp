@@ -11,6 +11,11 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+import "./global.css";
+
+if (__DEV__) {
+  require("./ReactotronConfig");
+}
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
