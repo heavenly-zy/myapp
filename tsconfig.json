@@ -1,5 +1,17 @@
 {
   "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "types": [
+      "jest"
+    ]
+  },
   "include": [
     "**/*.ts",
     "**/*.tsx",
